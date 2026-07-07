@@ -3,6 +3,7 @@
 import os
 import threading
 import logging
+from pathlib import Path
 from flask import Flask, jsonify, send_from_directory
 from flask_socketio import SocketIO
 from flask_cors import CORS
@@ -10,6 +11,12 @@ import config
 from modules import db_module
 
 logger = logging.getLogger(__name__)
+
+
+def _capture_url(path):
+    if not path:
+        return None
+    return f"/captures/{Path(path).name}"
 
 app = Flask(__name__)
 CORS(app)
@@ -32,7 +39,15 @@ def api_status():
 
 @app.route('/api/events')
 def api_events():
-    return jsonify(db_module.get_recent_events(20))
+    events = db_module.get_recent_events(20)
+    normalized = [
+        {
+            **event,
+            'image': _capture_url(event.get('image_path'))
+        }
+        for event in events
+    ]
+    return jsonify(normalized)
 
 @app.route('/captures/<path:filename>')
 def serve_captures(filename):

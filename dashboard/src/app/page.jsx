@@ -80,6 +80,14 @@ export default function Dashboard() {
     const formatDate = (e) =>
         e.date || (e.timestamp ? e.timestamp.substring(0, 10) : '----/--/--');
 
+    const resolveImageUrl = (image) => {
+        if (!image) return null;
+        if (image.startsWith('http://') || image.startsWith('https://')) {
+            return image;
+        }
+        return `${FLASK_URL}${image}`;
+    };
+
     // ── RENDER ─────────────────────────────────────────────
     return (
         <div
@@ -154,7 +162,7 @@ export default function Dashboard() {
                                 {latest.image ? (
                                     <div className='relative'>
                                         <img
-                                            src={`${FLASK_URL}${latest.image}`}
+                                            src={resolveImageUrl(latest.image)}
                                             alt='Foto deteksi terakhir'
                                             className='w-full rounded border border-orange-900
                                  max-h-72 object-contain bg-black'

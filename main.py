@@ -68,7 +68,12 @@ def initialize():
     db_module.init_db()
     logging.info('[BOOT] Database OK.')
  
-    # 2. Load model YOLOv8 — memakan waktu 5-30 detik
+    # 2. Inisialisasi kamera sekali untuk mempercepat capture manual
+    logging.info('[BOOT] Inisialisasi kamera...')
+    webcam_module.init_camera()
+    logging.info('[BOOT] Kamera OK.')
+ 
+    # 3. Load model YOLOv8 — memakan waktu 5-30 detik
     logging.info('[BOOT] Memuat model YOLOv8 (harap tunggu)...')
     yolo_module.init_yolo()
     logging.info('[BOOT] YOLOv8 OK.')
@@ -145,20 +150,20 @@ def handle_detection(power_db: float = -35.0):
         event_id   = event_id,
     )
  
-# ⑥ Push update ke dashboard via WebSocket (Cross-Platform Ready)
+    # ⑥ Push update ke dashboard via WebSocket (Cross-Platform Ready)
     import os
-    nama_file_foto = os.path.basename(yolo_path) if yolo_path else None
+    nama_file_foto = os.path.basename(image_path) if image_path else None
     
     payload_dashboard = {
-    "event_id": event_id,
-    "time": time.strftime("%H:%M:%S"),
-    "date": time.strftime("%Y-%m-%d"),
-    "freq": freq_mhz,
-    "power": power_db,
-    "persons": persons,
-    # Kita tembak langsung menggunakan port 5000 Flask penyedia gambar
-    "image": f"http://localhost:5000/captures/{nama_file_foto}" if nama_file_foto else None
-}
+        "event_id": event_id,
+        "time": time.strftime("%H:%M:%S"),
+        "date": time.strftime("%Y-%m-%d"),
+        "freq": freq_mhz,
+        "power": power_db,
+        "persons": persons,
+        # Kirim path relatif untuk diproses dashboard
+        "image": f"/captures/{nama_file_foto}" if nama_file_foto else None,
+    }
     flask_server.emit_event(payload_dashboard)
  
     logging.info('%s Pipeline selesai — Event #%d | %d orang.',
@@ -220,6 +225,7 @@ def main():
         # Cleanup sumber daya saat shutdown
         if config.MANUAL_TRIGGER_MODE:
             manual_trigger_module.stop_manual_trigger()
+        webcam_module.close_camera()
         alarm_module.close_serial()
         logging.info('[MAIN] === SIGINT STATION BERHENTI ===')
  
