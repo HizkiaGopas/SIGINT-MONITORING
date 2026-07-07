@@ -1,0 +1,491 @@
+2026-07-07 08:03:22,140 [INFO] root: =======================================================
+2026-07-07 08:03:22,141 [INFO] root:   SIGINT STATION v4.0 HYBRID — BOOT SEQUENCE
+2026-07-07 08:03:22,141 [INFO] root: =======================================================
+2026-07-07 08:03:22,207 [INFO] modules.db_module: [DB] Database diinisialisasi: D:\Mikrokontroler\sigint-station\data\sigint.db
+2026-07-07 08:03:22,208 [INFO] root: [BOOT] Database OK.
+2026-07-07 08:03:22,209 [INFO] root: [BOOT] Memuat model YOLOv8 (harap tunggu)...
+2026-07-07 08:03:22,209 [INFO] modules.yolo_module: [YOLO] Memuat model: yolov8n.pt ...
+2026-07-07 08:03:51,985 [WARNING] matplotlib.font_manager: Matplotlib is building the font cache; this may take a moment.
+2026-07-07 08:03:53,001 [INFO] matplotlib.font_manager: generated new fontManager
+2026-07-07 08:03:59,348 [INFO] modules.yolo_module: [YOLO] Model berhasil dimuat.
+2026-07-07 08:03:59,348 [INFO] root: [BOOT] YOLOv8 OK.
+2026-07-07 08:03:59,431 [WARNING] modules.alarm_module: [ALARM] Koneksi serial gagal: could not open port '/dev/ttyACM0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)
+2026-07-07 08:03:59,432 [WARNING] modules.alarm_module: [ALARM] Periksa: apakah kabel USB Arduino sudah terpasang?
+2026-07-07 08:03:59,432 [WARNING] modules.alarm_module: [ALARM] Port yang dicoba: /dev/ttyACM0
+2026-07-07 08:03:59,433 [WARNING] modules.alarm_module: [ALARM] Alarm fisik Arduino DINONAKTIFKAN untuk sesi ini.
+2026-07-07 08:04:01,828 [INFO] modules.alarm_module: [ALARM] Pygame audio OK.
+2026-07-07 08:04:01,829 [INFO] root: [BOOT] Alarm module OK.
+2026-07-07 08:04:01,832 [INFO] modules.flask_server: [FLASK] Server aktif di 0.0.0.0:5000
+2026-07-07 08:04:01,832 [INFO] root: [BOOT] Flask server OK.
+2026-07-07 08:04:01,852 [INFO] modules.manual_trigger_module: [TRIGGER] Listener aktif. Tombol trigger: [SPACE]
+2026-07-07 08:04:01,854 [INFO] root: [BOOT] Manual Trigger Mode AKTIF — Tombol: [SPACE].
+2026-07-07 08:04:01,854 [INFO] root: [BOOT] Semua modul berhasil diinisialisasi.
+2026-07-07 08:04:01,856 [INFO] root: [BOOT] Dashboard tersedia di: http://[IP-RPi5]:5000
+2026-07-07 08:04:01,856 [INFO] root: [MAIN] Memasuki monitoring loop. Tekan Ctrl+C untuk berhenti.
+2026-07-07 08:06:31,077 [INFO] root: =======================================================
+2026-07-07 08:06:31,077 [INFO] root:   SIGINT STATION v4.0 HYBRID — BOOT SEQUENCE
+2026-07-07 08:06:31,078 [INFO] root: =======================================================
+2026-07-07 08:06:31,082 [INFO] modules.db_module: [DB] Database diinisialisasi: D:\Mikrokontroler\sigint-station\data\sigint.db
+2026-07-07 08:06:31,083 [INFO] root: [BOOT] Database OK.
+2026-07-07 08:06:31,083 [INFO] root: [BOOT] Memuat model YOLOv8 (harap tunggu)...
+2026-07-07 08:06:31,083 [INFO] modules.yolo_module: [YOLO] Memuat model: yolov8n.pt ...
+2026-07-07 08:06:33,532 [INFO] modules.yolo_module: [YOLO] Model berhasil dimuat.
+2026-07-07 08:06:33,533 [INFO] root: [BOOT] YOLOv8 OK.
+2026-07-07 08:06:33,537 [WARNING] modules.alarm_module: [ALARM] Koneksi serial gagal: could not open port '/dev/ttyACM0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)
+2026-07-07 08:06:33,538 [WARNING] modules.alarm_module: [ALARM] Periksa: apakah kabel USB Arduino sudah terpasang?
+2026-07-07 08:06:33,538 [WARNING] modules.alarm_module: [ALARM] Port yang dicoba: /dev/ttyACM0
+2026-07-07 08:06:33,538 [WARNING] modules.alarm_module: [ALARM] Alarm fisik Arduino DINONAKTIFKAN untuk sesi ini.
+2026-07-07 08:06:33,771 [INFO] modules.alarm_module: [ALARM] Pygame audio OK.
+2026-07-07 08:06:33,771 [INFO] root: [BOOT] Alarm module OK.
+2026-07-07 08:06:33,773 [INFO] modules.flask_server: [FLASK] Server aktif di 0.0.0.0:5000 (Native Threading Mode)
+2026-07-07 08:06:33,774 [INFO] root: [BOOT] Flask server OK.
+2026-07-07 08:06:33,781 [INFO] modules.manual_trigger_module: [TRIGGER] Listener aktif. Tombol trigger: [SPACE]
+2026-07-07 08:06:33,782 [INFO] root: [BOOT] Manual Trigger Mode AKTIF — Tombol: [SPACE].
+2026-07-07 08:06:33,782 [INFO] root: [BOOT] Semua modul berhasil diinisialisasi.
+2026-07-07 08:06:33,782 [INFO] root: [BOOT] Dashboard tersedia di: http://[IP-RPi5]:5000
+2026-07-07 08:06:33,782 [INFO] root: [MAIN] Memasuki monitoring loop. Tekan Ctrl+C untuk berhenti.
+2026-07-07 08:06:38,154 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 08:06:38,155 [INFO] root: [DEMO] Pipeline deteksi dimulai: -35.0 dBm @ 145.000 MHz.
+2026-07-07 08:06:50,203 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 08:06:52,800 [INFO] modules.webcam_module: [WEBCAM] Frame disimpan: D:\Mikrokontroler\sigint-station\data\captures\raw_20260707_080652.jpg
+2026-07-07 08:07:13,132 [INFO] modules.yolo_module: [YOLO] 1 orang terdeteksi. Foto disimpan: D:\Mikrokontroler\sigint-station\data\captures\yolo_20260707_080713.jpg
+2026-07-07 08:07:13,146 [INFO] modules.db_module: [DB] Event #1 disimpan: -35.0 dBm, 1 orang.
+2026-07-07 08:07:13,147 [INFO] modules.flask_server: [FLASK] Event berhasil didorong ke dashboard: event_id=1
+2026-07-07 08:07:13,148 [INFO] root: [DEMO] Pipeline selesai — Event #1 | 1 orang.
+2026-07-07 08:07:13,149 [INFO] root: [DEMO] Pipeline deteksi dimulai: -35.0 dBm @ 145.000 MHz.
+2026-07-07 08:07:19,521 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 08:07:26,940 [INFO] modules.webcam_module: [WEBCAM] Frame disimpan: D:\Mikrokontroler\sigint-station\data\captures\raw_20260707_080726.jpg
+2026-07-07 08:07:27,000 [INFO] modules.yolo_module: [YOLO] 1 orang terdeteksi. Foto disimpan: D:\Mikrokontroler\sigint-station\data\captures\yolo_20260707_080726.jpg
+2026-07-07 08:07:27,017 [INFO] modules.db_module: [DB] Event #2 disimpan: -35.0 dBm, 1 orang.
+2026-07-07 08:07:27,019 [INFO] modules.flask_server: [FLASK] Event berhasil didorong ke dashboard: event_id=2
+2026-07-07 08:07:27,020 [INFO] root: [DEMO] Pipeline selesai — Event #2 | 1 orang.
+2026-07-07 08:07:27,020 [INFO] root: [DEMO] Pipeline deteksi dimulai: -35.0 dBm @ 145.000 MHz.
+2026-07-07 08:07:40,998 [INFO] modules.webcam_module: [WEBCAM] Frame disimpan: D:\Mikrokontroler\sigint-station\data\captures\raw_20260707_080740.jpg
+2026-07-07 08:07:41,063 [INFO] modules.yolo_module: [YOLO] 1 orang terdeteksi. Foto disimpan: D:\Mikrokontroler\sigint-station\data\captures\yolo_20260707_080741.jpg
+2026-07-07 08:07:41,078 [INFO] modules.db_module: [DB] Event #3 disimpan: -35.0 dBm, 1 orang.
+2026-07-07 08:07:41,080 [INFO] modules.flask_server: [FLASK] Event berhasil didorong ke dashboard: event_id=3
+2026-07-07 08:07:41,081 [INFO] root: [DEMO] Pipeline selesai — Event #3 | 1 orang.
+2026-07-07 08:08:49,487 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 08:08:49,488 [INFO] root: [DEMO] Pipeline deteksi dimulai: -35.0 dBm @ 145.000 MHz.
+2026-07-07 08:08:50,535 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 08:08:58,411 [INFO] root: [MAIN] Ctrl+C diterima — memulai shutdown...
+2026-07-07 08:08:58,417 [INFO] modules.manual_trigger_module: [TRIGGER] Listener dihentikan.
+2026-07-07 08:08:58,417 [INFO] root: [MAIN] === SIGINT STATION BERHENTI ===
+2026-07-07 08:09:58,223 [INFO] root: =======================================================
+2026-07-07 08:09:58,223 [INFO] root:   SIGINT STATION v4.0 HYBRID — BOOT SEQUENCE
+2026-07-07 08:09:58,224 [INFO] root: =======================================================
+2026-07-07 08:09:58,225 [INFO] modules.db_module: [DB] Database diinisialisasi: D:\Mikrokontroler\sigint-station\data\sigint.db
+2026-07-07 08:09:58,225 [INFO] root: [BOOT] Database OK.
+2026-07-07 08:09:58,226 [INFO] root: [BOOT] Memuat model YOLOv8 (harap tunggu)...
+2026-07-07 08:09:58,226 [INFO] modules.yolo_module: [YOLO] Memuat model: yolov8n.pt ...
+2026-07-07 08:10:00,703 [INFO] modules.yolo_module: [YOLO] Model berhasil dimuat.
+2026-07-07 08:10:00,704 [INFO] root: [BOOT] YOLOv8 OK.
+2026-07-07 08:10:00,710 [WARNING] modules.alarm_module: [ALARM] Koneksi serial gagal: could not open port '/dev/ttyACM0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)
+2026-07-07 08:10:00,710 [WARNING] modules.alarm_module: [ALARM] Periksa: apakah kabel USB Arduino sudah terpasang?
+2026-07-07 08:10:00,711 [WARNING] modules.alarm_module: [ALARM] Port yang dicoba: /dev/ttyACM0
+2026-07-07 08:10:00,711 [WARNING] modules.alarm_module: [ALARM] Alarm fisik Arduino DINONAKTIFKAN untuk sesi ini.
+2026-07-07 08:10:00,951 [INFO] modules.alarm_module: [ALARM] Pygame audio OK.
+2026-07-07 08:10:00,951 [INFO] root: [BOOT] Alarm module OK.
+2026-07-07 08:10:00,953 [INFO] modules.flask_server: [FLASK] Server aktif di 0.0.0.0:5000 (Native Threading Mode)
+2026-07-07 08:10:00,954 [INFO] root: [BOOT] Flask server OK.
+2026-07-07 08:10:00,974 [INFO] modules.manual_trigger_module: [TRIGGER] Listener aktif. Tombol trigger: [SPACE]
+2026-07-07 08:10:00,975 [INFO] root: [BOOT] Manual Trigger Mode AKTIF — Tombol: [SPACE].
+2026-07-07 08:10:00,975 [INFO] root: [BOOT] Semua modul berhasil diinisialisasi.
+2026-07-07 08:10:00,975 [INFO] root: [BOOT] Dashboard tersedia di: http://[IP-RPi5]:5000
+2026-07-07 08:10:00,975 [INFO] root: [MAIN] Memasuki monitoring loop. Tekan Ctrl+C untuk berhenti.
+2026-07-07 08:10:13,317 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 08:10:13,317 [INFO] root: [DEMO] Pipeline deteksi dimulai: -35.0 dBm @ 145.000 MHz.
+2026-07-07 08:10:27,966 [INFO] modules.webcam_module: [WEBCAM] Frame disimpan: D:\Mikrokontroler\sigint-station\data\captures\raw_20260707_081027.jpg
+2026-07-07 08:10:30,071 [INFO] modules.yolo_module: [YOLO] 1 orang terdeteksi. Foto disimpan: D:\Mikrokontroler\sigint-station\data\captures\yolo_20260707_081030.jpg
+2026-07-07 08:10:30,084 [INFO] modules.db_module: [DB] Event #4 disimpan: -35.0 dBm, 1 orang.
+2026-07-07 08:10:30,086 [INFO] modules.flask_server: [FLASK] Event berhasil didorong ke dashboard: event_id=4
+2026-07-07 08:10:30,086 [INFO] root: [DEMO] Pipeline selesai — Event #4 | 1 orang.
+2026-07-07 08:10:53,659 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 08:10:53,660 [INFO] root: [DEMO] Pipeline deteksi dimulai: -35.0 dBm @ 145.000 MHz.
+2026-07-07 08:10:54,321 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 08:11:08,129 [INFO] modules.webcam_module: [WEBCAM] Frame disimpan: D:\Mikrokontroler\sigint-station\data\captures\raw_20260707_081108.jpg
+2026-07-07 08:11:08,193 [INFO] modules.yolo_module: [YOLO] 1 orang terdeteksi. Foto disimpan: D:\Mikrokontroler\sigint-station\data\captures\yolo_20260707_081108.jpg
+2026-07-07 08:11:08,206 [INFO] modules.db_module: [DB] Event #5 disimpan: -35.0 dBm, 1 orang.
+2026-07-07 08:11:08,208 [INFO] modules.flask_server: [FLASK] Event berhasil didorong ke dashboard: event_id=5
+2026-07-07 08:11:08,208 [INFO] root: [DEMO] Pipeline selesai — Event #5 | 1 orang.
+2026-07-07 08:11:08,208 [INFO] root: [DEMO] Pipeline deteksi dimulai: -35.0 dBm @ 145.000 MHz.
+2026-07-07 08:11:22,635 [INFO] modules.webcam_module: [WEBCAM] Frame disimpan: D:\Mikrokontroler\sigint-station\data\captures\raw_20260707_081122.jpg
+2026-07-07 08:11:22,684 [INFO] modules.yolo_module: [YOLO] 1 orang terdeteksi. Foto disimpan: D:\Mikrokontroler\sigint-station\data\captures\yolo_20260707_081122.jpg
+2026-07-07 08:11:22,701 [INFO] modules.db_module: [DB] Event #6 disimpan: -35.0 dBm, 1 orang.
+2026-07-07 08:11:22,703 [INFO] modules.flask_server: [FLASK] Event berhasil didorong ke dashboard: event_id=6
+2026-07-07 08:11:22,704 [INFO] root: [DEMO] Pipeline selesai — Event #6 | 1 orang.
+2026-07-07 08:12:54,765 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 08:12:54,765 [INFO] root: [MAIN] Ctrl+C diterima — memulai shutdown...
+2026-07-07 08:12:54,766 [INFO] modules.manual_trigger_module: [TRIGGER] Listener dihentikan.
+2026-07-07 08:12:54,767 [INFO] root: [MAIN] === SIGINT STATION BERHENTI ===
+2026-07-07 08:16:04,461 [INFO] root: =======================================================
+2026-07-07 08:16:04,461 [INFO] root:   SIGINT STATION v4.0 HYBRID — BOOT SEQUENCE
+2026-07-07 08:16:04,462 [INFO] root: =======================================================
+2026-07-07 08:16:04,467 [INFO] modules.db_module: [DB] Database diinisialisasi: D:\Mikrokontroler\sigint-station\data\sigint.db
+2026-07-07 08:16:04,468 [INFO] root: [BOOT] Database OK.
+2026-07-07 08:16:04,468 [INFO] root: [BOOT] Memuat model YOLOv8 (harap tunggu)...
+2026-07-07 08:16:04,468 [INFO] modules.yolo_module: [YOLO] Memuat model: yolov8n.pt ...
+2026-07-07 08:16:07,244 [INFO] modules.yolo_module: [YOLO] Model berhasil dimuat.
+2026-07-07 08:16:07,245 [INFO] root: [BOOT] YOLOv8 OK.
+2026-07-07 08:16:07,252 [WARNING] modules.alarm_module: [ALARM] Koneksi serial gagal: could not open port '/dev/ttyACM0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)
+2026-07-07 08:16:07,252 [WARNING] modules.alarm_module: [ALARM] Periksa: apakah kabel USB Arduino sudah terpasang?
+2026-07-07 08:16:07,253 [WARNING] modules.alarm_module: [ALARM] Port yang dicoba: /dev/ttyACM0
+2026-07-07 08:16:07,253 [WARNING] modules.alarm_module: [ALARM] Alarm fisik Arduino DINONAKTIFKAN untuk sesi ini.
+2026-07-07 08:16:07,494 [INFO] modules.alarm_module: [ALARM] Pygame audio OK.
+2026-07-07 08:16:07,496 [INFO] root: [BOOT] Alarm module OK.
+2026-07-07 08:16:07,501 [INFO] modules.flask_server: [FLASK] Server aktif di 0.0.0.0:5000 (Native Threading Mode)
+2026-07-07 08:16:07,502 [INFO] root: [BOOT] Flask server OK.
+2026-07-07 08:16:07,512 [INFO] modules.manual_trigger_module: [TRIGGER] Listener aktif. Tombol trigger: [SPACE]
+2026-07-07 08:16:07,514 [INFO] root: [BOOT] Manual Trigger Mode AKTIF — Tombol: [SPACE].
+2026-07-07 08:16:07,514 [INFO] root: [BOOT] Semua modul berhasil diinisialisasi.
+2026-07-07 08:16:07,514 [INFO] root: [BOOT] Dashboard tersedia di: http://[IP-RPi5]:5000
+2026-07-07 08:16:07,515 [INFO] root: [MAIN] Memasuki monitoring loop. Tekan Ctrl+C untuk berhenti.
+2026-07-07 08:16:10,225 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 08:16:10,225 [INFO] root: [DEMO] Pipeline deteksi dimulai: -35.0 dBm @ 145.000 MHz.
+2026-07-07 08:16:24,852 [INFO] modules.webcam_module: [WEBCAM] Frame disimpan: D:\Mikrokontroler\sigint-station\data\captures\raw_20260707_081624.jpg
+2026-07-07 08:16:26,956 [INFO] modules.yolo_module: [YOLO] 1 orang terdeteksi. Foto disimpan: D:\Mikrokontroler\sigint-station\data\captures\yolo_20260707_081626.jpg
+2026-07-07 08:16:26,962 [INFO] modules.db_module: [DB] Event #7 disimpan: -35.0 dBm, 1 orang.
+2026-07-07 08:16:26,964 [INFO] modules.flask_server: [FLASK] Event berhasil didorong ke dashboard: event_id=7
+2026-07-07 08:16:26,965 [INFO] root: [DEMO] Pipeline selesai — Event #7 | 1 orang.
+2026-07-07 08:16:43,572 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 08:16:43,573 [INFO] root: [DEMO] Pipeline deteksi dimulai: -35.0 dBm @ 145.000 MHz.
+2026-07-07 08:16:45,512 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 08:16:57,983 [INFO] modules.webcam_module: [WEBCAM] Frame disimpan: D:\Mikrokontroler\sigint-station\data\captures\raw_20260707_081657.jpg
+2026-07-07 08:16:58,043 [INFO] modules.yolo_module: [YOLO] 1 orang terdeteksi. Foto disimpan: D:\Mikrokontroler\sigint-station\data\captures\yolo_20260707_081658.jpg
+2026-07-07 08:16:58,057 [INFO] modules.db_module: [DB] Event #8 disimpan: -35.0 dBm, 1 orang.
+2026-07-07 08:16:58,061 [INFO] modules.flask_server: [FLASK] Event berhasil didorong ke dashboard: event_id=8
+2026-07-07 08:16:58,061 [INFO] root: [DEMO] Pipeline selesai — Event #8 | 1 orang.
+2026-07-07 08:16:58,062 [INFO] root: [DEMO] Pipeline deteksi dimulai: -35.0 dBm @ 145.000 MHz.
+2026-07-07 08:17:12,646 [INFO] modules.webcam_module: [WEBCAM] Frame disimpan: D:\Mikrokontroler\sigint-station\data\captures\raw_20260707_081712.jpg
+2026-07-07 08:17:12,708 [INFO] modules.yolo_module: [YOLO] 1 orang terdeteksi. Foto disimpan: D:\Mikrokontroler\sigint-station\data\captures\yolo_20260707_081712.jpg
+2026-07-07 08:17:12,723 [INFO] modules.db_module: [DB] Event #9 disimpan: -35.0 dBm, 1 orang.
+2026-07-07 08:17:12,725 [INFO] modules.flask_server: [FLASK] Event berhasil didorong ke dashboard: event_id=9
+2026-07-07 08:17:12,726 [INFO] root: [DEMO] Pipeline selesai — Event #9 | 1 orang.
+2026-07-07 08:19:54,873 [INFO] root: =======================================================
+2026-07-07 08:19:54,874 [INFO] root:   SIGINT STATION v4.0 HYBRID — BOOT SEQUENCE
+2026-07-07 08:19:54,874 [INFO] root: =======================================================
+2026-07-07 08:19:54,894 [INFO] modules.db_module: [DB] Database diinisialisasi: D:\Mikrokontroler\sigint-station\data\sigint.db
+2026-07-07 08:19:54,894 [INFO] root: [BOOT] Database OK.
+2026-07-07 08:19:54,894 [INFO] root: [BOOT] Memuat model YOLOv8 (harap tunggu)...
+2026-07-07 08:19:54,895 [INFO] modules.yolo_module: [YOLO] Memuat model: yolov8n.pt ...
+2026-07-07 08:19:57,574 [INFO] modules.yolo_module: [YOLO] Model berhasil dimuat.
+2026-07-07 08:19:57,574 [INFO] root: [BOOT] YOLOv8 OK.
+2026-07-07 08:19:57,579 [WARNING] modules.alarm_module: [ALARM] Koneksi serial gagal: could not open port '/dev/ttyACM0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)
+2026-07-07 08:19:57,579 [WARNING] modules.alarm_module: [ALARM] Periksa: apakah kabel USB Arduino sudah terpasang?
+2026-07-07 08:19:57,580 [WARNING] modules.alarm_module: [ALARM] Port yang dicoba: /dev/ttyACM0
+2026-07-07 08:19:57,580 [WARNING] modules.alarm_module: [ALARM] Alarm fisik Arduino DINONAKTIFKAN untuk sesi ini.
+2026-07-07 08:19:57,820 [INFO] modules.alarm_module: [ALARM] Pygame audio OK.
+2026-07-07 08:19:57,821 [INFO] root: [BOOT] Alarm module OK.
+2026-07-07 08:19:57,823 [INFO] modules.flask_server: [FLASK] Server aktif di 0.0.0.0:5000 (Native Threading Mode)
+2026-07-07 08:19:57,824 [INFO] root: [BOOT] Flask server OK.
+2026-07-07 08:19:57,841 [INFO] modules.manual_trigger_module: [TRIGGER] Listener aktif. Tombol trigger: [SPACE]
+2026-07-07 08:19:57,842 [INFO] root: [BOOT] Manual Trigger Mode AKTIF — Tombol: [SPACE].
+2026-07-07 08:19:57,843 [INFO] root: [BOOT] Semua modul berhasil diinisialisasi.
+2026-07-07 08:19:57,843 [INFO] root: [BOOT] Dashboard tersedia di: http://[IP-RPi5]:5000
+2026-07-07 08:19:57,844 [INFO] root: [MAIN] Memasuki monitoring loop. Tekan Ctrl+C untuk berhenti.
+2026-07-07 08:20:04,236 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 08:20:04,237 [INFO] root: [DEMO] Pipeline deteksi dimulai: -35.0 dBm @ 145.000 MHz.
+2026-07-07 08:20:18,078 [INFO] modules.webcam_module: [WEBCAM] Frame disimpan: D:\Mikrokontroler\sigint-station\data\captures\raw_20260707_082018.jpg
+2026-07-07 08:20:20,084 [INFO] modules.yolo_module: [YOLO] 1 orang terdeteksi. Foto disimpan: D:\Mikrokontroler\sigint-station\data\captures\yolo_20260707_082020.jpg
+2026-07-07 08:20:20,092 [INFO] modules.db_module: [DB] Event #1 disimpan: -35.0 dBm, 1 orang.
+2026-07-07 08:20:20,094 [INFO] modules.flask_server: [FLASK] Event berhasil didorong ke dashboard: event_id=1
+2026-07-07 08:20:20,095 [INFO] root: [DEMO] Pipeline selesai — Event #1 | 1 orang.
+2026-07-07 08:20:35,698 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 08:20:35,699 [INFO] root: [DEMO] Pipeline deteksi dimulai: -35.0 dBm @ 145.000 MHz.
+2026-07-07 08:20:36,796 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 08:20:50,097 [INFO] modules.webcam_module: [WEBCAM] Frame disimpan: D:\Mikrokontroler\sigint-station\data\captures\raw_20260707_082050.jpg
+2026-07-07 08:20:50,168 [INFO] modules.yolo_module: [YOLO] 1 orang terdeteksi. Foto disimpan: D:\Mikrokontroler\sigint-station\data\captures\yolo_20260707_082050.jpg
+2026-07-07 08:20:50,180 [INFO] modules.db_module: [DB] Event #2 disimpan: -35.0 dBm, 1 orang.
+2026-07-07 08:20:50,182 [INFO] modules.flask_server: [FLASK] Event berhasil didorong ke dashboard: event_id=2
+2026-07-07 08:20:50,183 [INFO] root: [DEMO] Pipeline selesai — Event #2 | 1 orang.
+2026-07-07 08:20:50,183 [INFO] root: [DEMO] Pipeline deteksi dimulai: -35.0 dBm @ 145.000 MHz.
+2026-07-07 08:38:58,774 [INFO] root: =======================================================
+2026-07-07 08:38:58,775 [INFO] root:   SIGINT STATION v4.0 HYBRID — BOOT SEQUENCE
+2026-07-07 08:38:58,775 [INFO] root: =======================================================
+2026-07-07 08:38:58,778 [INFO] modules.db_module: [DB] Database diinisialisasi: D:\Mikrokontroler\sigint-station\data\sigint.db
+2026-07-07 08:38:58,778 [INFO] root: [BOOT] Database OK.
+2026-07-07 08:38:58,779 [INFO] root: [BOOT] Memuat model YOLOv8 (harap tunggu)...
+2026-07-07 08:38:58,779 [INFO] modules.yolo_module: [YOLO] Memuat model: yolov8n.pt ...
+2026-07-07 08:39:01,739 [INFO] modules.yolo_module: [YOLO] Model berhasil dimuat.
+2026-07-07 08:39:01,739 [INFO] root: [BOOT] YOLOv8 OK.
+2026-07-07 08:39:01,743 [WARNING] modules.alarm_module: [ALARM] Koneksi serial gagal: could not open port '/dev/ttyACM0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)
+2026-07-07 08:39:01,744 [WARNING] modules.alarm_module: [ALARM] Periksa: apakah kabel USB Arduino sudah terpasang?
+2026-07-07 08:39:01,744 [WARNING] modules.alarm_module: [ALARM] Port yang dicoba: /dev/ttyACM0
+2026-07-07 08:39:01,744 [WARNING] modules.alarm_module: [ALARM] Alarm fisik Arduino DINONAKTIFKAN untuk sesi ini.
+2026-07-07 08:39:01,975 [INFO] modules.alarm_module: [ALARM] Pygame audio OK.
+2026-07-07 08:39:01,975 [INFO] root: [BOOT] Alarm module OK.
+2026-07-07 08:39:01,976 [INFO] modules.flask_server: [FLASK] Server aktif di 0.0.0.0:5000 (Native Threading Mode)
+2026-07-07 08:39:01,976 [INFO] root: [BOOT] Flask server OK.
+2026-07-07 08:39:01,988 [INFO] modules.manual_trigger_module: [TRIGGER] Listener aktif. Tombol trigger: [SPACE]
+2026-07-07 08:39:01,988 [INFO] root: [BOOT] Manual Trigger Mode AKTIF — Tombol: [SPACE].
+2026-07-07 08:39:01,989 [INFO] root: [BOOT] Semua modul berhasil diinisialisasi.
+2026-07-07 08:39:01,989 [INFO] root: [BOOT] Dashboard tersedia di: http://[IP-RPi5]:5000
+2026-07-07 08:39:01,989 [INFO] root: [MAIN] Memasuki monitoring loop. Tekan Ctrl+C untuk berhenti.
+2026-07-07 08:39:09,934 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 08:39:09,934 [INFO] root: [DEMO] Pipeline deteksi dimulai: -35.0 dBm @ 145.000 MHz.
+2026-07-07 08:39:23,976 [INFO] modules.webcam_module: [WEBCAM] Frame disimpan: D:\Mikrokontroler\sigint-station\data\captures\raw_20260707_083923.jpg
+2026-07-07 08:39:25,982 [INFO] modules.yolo_module: [YOLO] 1 orang terdeteksi. Foto disimpan: D:\Mikrokontroler\sigint-station\data\captures\yolo_20260707_083925.jpg
+2026-07-07 08:39:25,987 [INFO] modules.db_module: [DB] Event #3 disimpan: -35.0 dBm, 1 orang.
+2026-07-07 08:39:25,988 [INFO] modules.flask_server: [FLASK] Event berhasil didorong ke dashboard: event_id=3
+2026-07-07 08:39:25,989 [INFO] root: [DEMO] Pipeline selesai — Event #3 | 1 orang.
+2026-07-07 08:39:45,324 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 08:39:45,326 [INFO] root: [DEMO] Pipeline deteksi dimulai: -35.0 dBm @ 145.000 MHz.
+2026-07-07 08:39:46,347 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 08:39:59,628 [INFO] modules.webcam_module: [WEBCAM] Frame disimpan: D:\Mikrokontroler\sigint-station\data\captures\raw_20260707_083959.jpg
+2026-07-07 08:39:59,678 [INFO] modules.yolo_module: [YOLO] 1 orang terdeteksi. Foto disimpan: D:\Mikrokontroler\sigint-station\data\captures\yolo_20260707_083959.jpg
+2026-07-07 08:39:59,693 [INFO] modules.db_module: [DB] Event #4 disimpan: -35.0 dBm, 1 orang.
+2026-07-07 08:39:59,695 [INFO] modules.flask_server: [FLASK] Event berhasil didorong ke dashboard: event_id=4
+2026-07-07 08:39:59,696 [INFO] root: [DEMO] Pipeline selesai — Event #4 | 1 orang.
+2026-07-07 08:39:59,696 [INFO] root: [DEMO] Pipeline deteksi dimulai: -35.0 dBm @ 145.000 MHz.
+2026-07-07 08:40:14,276 [INFO] modules.webcam_module: [WEBCAM] Frame disimpan: D:\Mikrokontroler\sigint-station\data\captures\raw_20260707_084014.jpg
+2026-07-07 08:40:14,391 [INFO] modules.yolo_module: [YOLO] 1 orang terdeteksi. Foto disimpan: D:\Mikrokontroler\sigint-station\data\captures\yolo_20260707_084014.jpg
+2026-07-07 08:40:14,405 [INFO] modules.db_module: [DB] Event #5 disimpan: -35.0 dBm, 1 orang.
+2026-07-07 08:40:14,407 [INFO] modules.flask_server: [FLASK] Event berhasil didorong ke dashboard: event_id=5
+2026-07-07 08:40:14,408 [INFO] root: [DEMO] Pipeline selesai — Event #5 | 1 orang.
+2026-07-07 08:41:45,656 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 08:41:45,657 [INFO] root: [DEMO] Pipeline deteksi dimulai: -35.0 dBm @ 145.000 MHz.
+2026-07-07 08:41:46,362 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 08:41:59,779 [INFO] modules.webcam_module: [WEBCAM] Frame disimpan: D:\Mikrokontroler\sigint-station\data\captures\raw_20260707_084159.jpg
+2026-07-07 08:41:59,831 [INFO] modules.yolo_module: [YOLO] 1 orang terdeteksi. Foto disimpan: D:\Mikrokontroler\sigint-station\data\captures\yolo_20260707_084159.jpg
+2026-07-07 08:41:59,847 [INFO] modules.db_module: [DB] Event #6 disimpan: -35.0 dBm, 1 orang.
+2026-07-07 08:41:59,849 [INFO] modules.flask_server: [FLASK] Event berhasil didorong ke dashboard: event_id=6
+2026-07-07 08:41:59,850 [INFO] root: [DEMO] Pipeline selesai — Event #6 | 1 orang.
+2026-07-07 08:41:59,850 [INFO] root: [DEMO] Pipeline deteksi dimulai: -35.0 dBm @ 145.000 MHz.
+2026-07-07 08:42:14,070 [INFO] modules.webcam_module: [WEBCAM] Frame disimpan: D:\Mikrokontroler\sigint-station\data\captures\raw_20260707_084214.jpg
+2026-07-07 08:42:14,121 [INFO] modules.yolo_module: [YOLO] 1 orang terdeteksi. Foto disimpan: D:\Mikrokontroler\sigint-station\data\captures\yolo_20260707_084214.jpg
+2026-07-07 08:42:14,136 [INFO] modules.db_module: [DB] Event #7 disimpan: -35.0 dBm, 1 orang.
+2026-07-07 08:42:14,138 [INFO] modules.flask_server: [FLASK] Event berhasil didorong ke dashboard: event_id=7
+2026-07-07 08:42:14,138 [INFO] root: [DEMO] Pipeline selesai — Event #7 | 1 orang.
+2026-07-07 08:42:16,485 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 08:42:16,486 [INFO] root: [DEMO] Pipeline deteksi dimulai: -35.0 dBm @ 145.000 MHz.
+2026-07-07 08:42:30,844 [INFO] modules.webcam_module: [WEBCAM] Frame disimpan: D:\Mikrokontroler\sigint-station\data\captures\raw_20260707_084230.jpg
+2026-07-07 08:42:30,903 [INFO] modules.yolo_module: [YOLO] 1 orang terdeteksi. Foto disimpan: D:\Mikrokontroler\sigint-station\data\captures\yolo_20260707_084230.jpg
+2026-07-07 08:42:30,919 [INFO] modules.db_module: [DB] Event #8 disimpan: -35.0 dBm, 1 orang.
+2026-07-07 08:42:30,921 [INFO] modules.flask_server: [FLASK] Event berhasil didorong ke dashboard: event_id=8
+2026-07-07 08:42:30,921 [INFO] root: [DEMO] Pipeline selesai — Event #8 | 1 orang.
+2026-07-07 08:44:46,411 [INFO] root: =======================================================
+2026-07-07 08:44:46,411 [INFO] root:   SIGINT STATION v4.0 HYBRID — BOOT SEQUENCE
+2026-07-07 08:44:46,411 [INFO] root: =======================================================
+2026-07-07 08:44:46,414 [INFO] modules.db_module: [DB] Database diinisialisasi: D:\Mikrokontroler\sigint-station\data\sigint.db
+2026-07-07 08:44:46,415 [INFO] root: [BOOT] Database OK.
+2026-07-07 08:44:46,415 [INFO] root: [BOOT] Memuat model YOLOv8 (harap tunggu)...
+2026-07-07 08:44:46,415 [INFO] modules.yolo_module: [YOLO] Memuat model: yolov8n.pt ...
+2026-07-07 08:44:48,977 [INFO] modules.yolo_module: [YOLO] Model berhasil dimuat.
+2026-07-07 08:44:48,977 [INFO] root: [BOOT] YOLOv8 OK.
+2026-07-07 08:44:48,981 [WARNING] modules.alarm_module: [ALARM] Koneksi serial gagal: could not open port '/dev/ttyACM0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)
+2026-07-07 08:44:48,982 [WARNING] modules.alarm_module: [ALARM] Periksa: apakah kabel USB Arduino sudah terpasang?
+2026-07-07 08:44:48,982 [WARNING] modules.alarm_module: [ALARM] Port yang dicoba: /dev/ttyACM0
+2026-07-07 08:44:48,982 [WARNING] modules.alarm_module: [ALARM] Alarm fisik Arduino DINONAKTIFKAN untuk sesi ini.
+2026-07-07 08:44:49,183 [INFO] modules.alarm_module: [ALARM] Pygame audio OK.
+2026-07-07 08:44:49,183 [INFO] root: [BOOT] Alarm module OK.
+2026-07-07 08:44:49,184 [INFO] modules.flask_server: [FLASK] Server aktif di 0.0.0.0:5000 (Native Threading Mode)
+2026-07-07 08:44:49,184 [INFO] root: [BOOT] Flask server OK.
+2026-07-07 08:44:49,195 [INFO] modules.manual_trigger_module: [TRIGGER] Listener aktif. Tombol trigger: [SPACE]
+2026-07-07 08:44:49,195 [INFO] root: [BOOT] Manual Trigger Mode AKTIF — Tombol: [SPACE].
+2026-07-07 08:44:49,195 [INFO] root: [BOOT] Semua modul berhasil diinisialisasi.
+2026-07-07 08:44:49,196 [INFO] root: [BOOT] Dashboard tersedia di: http://[IP-RPi5]:5000
+2026-07-07 08:44:49,196 [INFO] root: [MAIN] Memasuki monitoring loop. Tekan Ctrl+C untuk berhenti.
+2026-07-07 08:44:51,112 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 08:44:51,112 [INFO] root: [DEMO] Pipeline deteksi dimulai: -35.0 dBm @ 145.000 MHz.
+2026-07-07 08:45:05,377 [INFO] modules.webcam_module: [WEBCAM] Frame disimpan: D:\Mikrokontroler\sigint-station\data\captures\raw_20260707_084505.jpg
+2026-07-07 08:45:07,378 [INFO] modules.yolo_module: [YOLO] 1 orang terdeteksi. Foto disimpan: D:\Mikrokontroler\sigint-station\data\captures\yolo_20260707_084507.jpg
+2026-07-07 08:45:07,389 [INFO] modules.db_module: [DB] Event #9 disimpan: -35.0 dBm, 1 orang.
+2026-07-07 08:45:07,391 [INFO] modules.flask_server: [FLASK] Event berhasil didorong ke dashboard: event_id=9
+2026-07-07 08:45:07,392 [INFO] root: [DEMO] Pipeline selesai — Event #9 | 1 orang.
+2026-07-07 08:45:46,755 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 08:45:46,756 [INFO] root: [DEMO] Pipeline deteksi dimulai: -35.0 dBm @ 145.000 MHz.
+2026-07-07 08:45:47,490 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 08:46:00,937 [INFO] modules.webcam_module: [WEBCAM] Frame disimpan: D:\Mikrokontroler\sigint-station\data\captures\raw_20260707_084600.jpg
+2026-07-07 08:46:00,987 [INFO] modules.yolo_module: [YOLO] 1 orang terdeteksi. Foto disimpan: D:\Mikrokontroler\sigint-station\data\captures\yolo_20260707_084600.jpg
+2026-07-07 08:46:01,000 [INFO] modules.db_module: [DB] Event #10 disimpan: -35.0 dBm, 1 orang.
+2026-07-07 08:46:01,002 [INFO] modules.flask_server: [FLASK] Event berhasil didorong ke dashboard: event_id=10
+2026-07-07 08:46:01,002 [INFO] root: [DEMO] Pipeline selesai — Event #10 | 1 orang.
+2026-07-07 08:46:01,003 [INFO] root: [DEMO] Pipeline deteksi dimulai: -35.0 dBm @ 145.000 MHz.
+2026-07-07 08:46:14,757 [INFO] modules.webcam_module: [WEBCAM] Frame disimpan: D:\Mikrokontroler\sigint-station\data\captures\raw_20260707_084614.jpg
+2026-07-07 08:46:14,800 [INFO] modules.yolo_module: [YOLO] 1 orang terdeteksi. Foto disimpan: D:\Mikrokontroler\sigint-station\data\captures\yolo_20260707_084614.jpg
+2026-07-07 08:46:14,814 [INFO] modules.db_module: [DB] Event #11 disimpan: -35.0 dBm, 1 orang.
+2026-07-07 08:46:14,816 [INFO] modules.flask_server: [FLASK] Event berhasil didorong ke dashboard: event_id=11
+2026-07-07 08:46:14,817 [INFO] root: [DEMO] Pipeline selesai — Event #11 | 1 orang.
+2026-07-07 08:48:49,410 [INFO] root: =======================================================
+2026-07-07 08:48:49,411 [INFO] root:   SIGINT STATION v4.0 HYBRID — BOOT SEQUENCE
+2026-07-07 08:48:49,411 [INFO] root: =======================================================
+2026-07-07 08:48:49,414 [INFO] modules.db_module: [DB] Database diinisialisasi: D:\Mikrokontroler\sigint-station\data\sigint.db
+2026-07-07 08:48:49,414 [INFO] root: [BOOT] Database OK.
+2026-07-07 08:48:49,414 [INFO] root: [BOOT] Memuat model YOLOv8 (harap tunggu)...
+2026-07-07 08:48:49,414 [INFO] modules.yolo_module: [YOLO] Memuat model: yolov8n.pt ...
+2026-07-07 08:48:51,903 [INFO] modules.yolo_module: [YOLO] Model berhasil dimuat.
+2026-07-07 08:48:51,903 [INFO] root: [BOOT] YOLOv8 OK.
+2026-07-07 08:48:51,908 [WARNING] modules.alarm_module: [ALARM] Koneksi serial gagal: could not open port '/dev/ttyACM0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)
+2026-07-07 08:48:51,908 [WARNING] modules.alarm_module: [ALARM] Periksa: apakah kabel USB Arduino sudah terpasang?
+2026-07-07 08:48:51,909 [WARNING] modules.alarm_module: [ALARM] Port yang dicoba: /dev/ttyACM0
+2026-07-07 08:48:51,909 [WARNING] modules.alarm_module: [ALARM] Alarm fisik Arduino DINONAKTIFKAN untuk sesi ini.
+2026-07-07 08:48:52,117 [INFO] modules.alarm_module: [ALARM] Pygame audio OK.
+2026-07-07 08:48:52,117 [INFO] root: [BOOT] Alarm module OK.
+2026-07-07 08:48:52,118 [INFO] modules.flask_server: [FLASK] Server aktif di 0.0.0.0:5000 (Native Threading Mode)
+2026-07-07 08:48:52,119 [INFO] root: [BOOT] Flask server OK.
+2026-07-07 08:48:52,128 [INFO] modules.manual_trigger_module: [TRIGGER] Listener aktif. Tombol trigger: [SPACE]
+2026-07-07 08:48:52,128 [INFO] root: [BOOT] Manual Trigger Mode AKTIF — Tombol: [SPACE].
+2026-07-07 08:48:52,128 [INFO] root: [BOOT] Semua modul berhasil diinisialisasi.
+2026-07-07 08:48:52,129 [INFO] root: [BOOT] Dashboard tersedia di: http://[IP-RPi5]:5000
+2026-07-07 08:48:52,129 [INFO] root: [MAIN] Memasuki monitoring loop. Tekan Ctrl+C untuk berhenti.
+2026-07-07 08:48:52,840 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 08:48:52,840 [INFO] root: [DEMO] Pipeline deteksi dimulai: -35.0 dBm @ 145.000 MHz.
+2026-07-07 08:49:06,814 [INFO] modules.webcam_module: [WEBCAM] Frame disimpan: D:\Mikrokontroler\sigint-station\data\captures\raw_20260707_084906.jpg
+2026-07-07 08:49:08,707 [INFO] modules.yolo_module: [YOLO] 1 orang terdeteksi. Foto disimpan: D:\Mikrokontroler\sigint-station\data\captures\yolo_20260707_084908.jpg
+2026-07-07 08:49:08,721 [INFO] modules.db_module: [DB] Event #12 disimpan: -35.0 dBm, 1 orang.
+2026-07-07 08:49:08,723 [INFO] modules.flask_server: [FLASK] Event berhasil didorong ke dashboard: event_id=12
+2026-07-07 08:49:08,724 [INFO] root: [DEMO] Pipeline selesai — Event #12 | 1 orang.
+2026-07-07 08:50:18,366 [INFO] root: =======================================================
+2026-07-07 08:50:18,367 [INFO] root:   SIGINT STATION v4.0 HYBRID — BOOT SEQUENCE
+2026-07-07 08:50:18,367 [INFO] root: =======================================================
+2026-07-07 08:50:18,370 [INFO] modules.db_module: [DB] Database diinisialisasi: D:\Mikrokontroler\sigint-station\data\sigint.db
+2026-07-07 08:50:18,371 [INFO] root: [BOOT] Database OK.
+2026-07-07 08:50:18,371 [INFO] root: [BOOT] Memuat model YOLOv8 (harap tunggu)...
+2026-07-07 08:50:18,371 [INFO] modules.yolo_module: [YOLO] Memuat model: yolov8n.pt ...
+2026-07-07 08:50:20,761 [INFO] modules.yolo_module: [YOLO] Model berhasil dimuat.
+2026-07-07 08:50:20,761 [INFO] root: [BOOT] YOLOv8 OK.
+2026-07-07 08:50:20,766 [WARNING] modules.alarm_module: [ALARM] Koneksi serial gagal: could not open port '/dev/ttyACM0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)
+2026-07-07 08:50:20,766 [WARNING] modules.alarm_module: [ALARM] Periksa: apakah kabel USB Arduino sudah terpasang?
+2026-07-07 08:50:20,767 [WARNING] modules.alarm_module: [ALARM] Port yang dicoba: /dev/ttyACM0
+2026-07-07 08:50:20,767 [WARNING] modules.alarm_module: [ALARM] Alarm fisik Arduino DINONAKTIFKAN untuk sesi ini.
+2026-07-07 08:50:20,984 [INFO] modules.alarm_module: [ALARM] Pygame audio OK.
+2026-07-07 08:50:20,984 [INFO] root: [BOOT] Alarm module OK.
+2026-07-07 08:50:20,986 [INFO] modules.flask_server: [FLASK] Server aktif di 0.0.0.0:5000 (Native Threading Mode)
+2026-07-07 08:50:20,987 [INFO] root: [BOOT] Flask server OK.
+2026-07-07 08:50:20,995 [INFO] modules.manual_trigger_module: [TRIGGER] Listener aktif. Tombol trigger: [SPACE]
+2026-07-07 08:50:20,996 [INFO] root: [BOOT] Manual Trigger Mode AKTIF — Tombol: [SPACE].
+2026-07-07 08:50:20,996 [INFO] root: [BOOT] Semua modul berhasil diinisialisasi.
+2026-07-07 08:50:20,997 [INFO] root: [BOOT] Dashboard tersedia di: http://[IP-RPi5]:5000
+2026-07-07 08:50:20,997 [INFO] root: [MAIN] Memasuki monitoring loop. Tekan Ctrl+C untuk berhenti.
+2026-07-07 08:50:25,074 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 08:50:25,078 [INFO] root: [DEMO] Pipeline deteksi dimulai: -35.0 dBm @ 145.000 MHz.
+2026-07-07 08:50:38,649 [INFO] modules.webcam_module: [WEBCAM] Frame disimpan: D:\Mikrokontroler\sigint-station\data\captures\raw_20260707_085038.jpg
+2026-07-07 08:50:40,495 [INFO] modules.yolo_module: [YOLO] 1 orang terdeteksi. Foto disimpan: D:\Mikrokontroler\sigint-station\data\captures\yolo_20260707_085040.jpg
+2026-07-07 08:50:40,506 [INFO] modules.db_module: [DB] Event #13 disimpan: -35.0 dBm, 1 orang.
+2026-07-07 08:50:40,509 [INFO] modules.flask_server: [FLASK] Event berhasil didorong ke dashboard: event_id=13
+2026-07-07 08:50:40,509 [INFO] root: [DEMO] Pipeline selesai — Event #13 | 1 orang.
+2026-07-07 08:50:43,554 [INFO] modules.telegram_module: ✅ Laporan otomatis terkirim ke Telegram.
+2026-07-07 08:51:13,447 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 08:51:13,448 [INFO] root: [DEMO] Pipeline deteksi dimulai: -35.0 dBm @ 145.000 MHz.
+2026-07-07 08:51:26,976 [INFO] modules.webcam_module: [WEBCAM] Frame disimpan: D:\Mikrokontroler\sigint-station\data\captures\raw_20260707_085126.jpg
+2026-07-07 08:51:27,025 [INFO] modules.yolo_module: [YOLO] 0 orang terdeteksi. Foto disimpan: D:\Mikrokontroler\sigint-station\data\captures\yolo_20260707_085127.jpg
+2026-07-07 08:51:27,038 [INFO] modules.db_module: [DB] Event #14 disimpan: -35.0 dBm, 0 orang.
+2026-07-07 08:51:27,040 [INFO] modules.flask_server: [FLASK] Event berhasil didorong ke dashboard: event_id=14
+2026-07-07 08:51:27,041 [INFO] root: [DEMO] Pipeline selesai — Event #14 | 0 orang.
+2026-07-07 08:51:30,187 [INFO] modules.telegram_module: ✅ Laporan otomatis terkirim ke Telegram.
+2026-07-07 08:51:42,191 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 08:51:42,192 [INFO] root: [DEMO] Pipeline deteksi dimulai: -35.0 dBm @ 145.000 MHz.
+2026-07-07 08:51:55,956 [INFO] modules.webcam_module: [WEBCAM] Frame disimpan: D:\Mikrokontroler\sigint-station\data\captures\raw_20260707_085155.jpg
+2026-07-07 08:51:55,999 [INFO] modules.yolo_module: [YOLO] 0 orang terdeteksi. Foto disimpan: D:\Mikrokontroler\sigint-station\data\captures\yolo_20260707_085155.jpg
+2026-07-07 08:51:56,013 [INFO] modules.db_module: [DB] Event #15 disimpan: -35.0 dBm, 0 orang.
+2026-07-07 08:51:56,015 [INFO] modules.flask_server: [FLASK] Event berhasil didorong ke dashboard: event_id=15
+2026-07-07 08:51:56,016 [INFO] root: [DEMO] Pipeline selesai — Event #15 | 0 orang.
+2026-07-07 08:51:58,509 [INFO] modules.telegram_module: ✅ Laporan otomatis terkirim ke Telegram.
+2026-07-07 08:52:21,969 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 08:52:21,971 [INFO] root: [MAIN] Ctrl+C diterima — memulai shutdown...
+2026-07-07 08:52:21,975 [INFO] modules.manual_trigger_module: [TRIGGER] Listener dihentikan.
+2026-07-07 08:52:21,976 [INFO] root: [MAIN] === SIGINT STATION BERHENTI ===
+2026-07-07 08:59:11,994 [INFO] root: =======================================================
+2026-07-07 08:59:11,995 [INFO] root:   SIGINT STATION v4.0 HYBRID — BOOT SEQUENCE
+2026-07-07 08:59:11,995 [INFO] root: =======================================================
+2026-07-07 08:59:11,999 [INFO] modules.db_module: [DB] Database diinisialisasi: D:\Mikrokontroler\sigint-station\data\sigint.db
+2026-07-07 08:59:12,000 [INFO] root: [BOOT] Database OK.
+2026-07-07 08:59:12,001 [INFO] root: [BOOT] Memuat model YOLOv8 (harap tunggu)...
+2026-07-07 08:59:12,002 [INFO] modules.yolo_module: [YOLO] Memuat model: yolov8n.pt ...
+2026-07-07 08:59:15,472 [INFO] modules.yolo_module: [YOLO] Model berhasil dimuat.
+2026-07-07 08:59:15,473 [INFO] root: [BOOT] YOLOv8 OK.
+2026-07-07 08:59:15,482 [WARNING] modules.alarm_module: [ALARM] Koneksi serial gagal: could not open port '/dev/ttyACM0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)
+2026-07-07 08:59:15,483 [WARNING] modules.alarm_module: [ALARM] Periksa: apakah kabel USB Arduino sudah terpasang?
+2026-07-07 08:59:15,485 [WARNING] modules.alarm_module: [ALARM] Port yang dicoba: /dev/ttyACM0
+2026-07-07 08:59:15,486 [WARNING] modules.alarm_module: [ALARM] Alarm fisik Arduino DINONAKTIFKAN untuk sesi ini.
+2026-07-07 08:59:15,889 [INFO] modules.alarm_module: [ALARM] Pygame audio OK.
+2026-07-07 08:59:15,889 [INFO] root: [BOOT] Alarm module OK.
+2026-07-07 08:59:15,891 [INFO] modules.flask_server: [FLASK] Server aktif di 0.0.0.0:5000 (Native Threading Mode)
+2026-07-07 08:59:15,891 [INFO] root: [BOOT] Flask server OK.
+2026-07-07 08:59:15,902 [INFO] modules.manual_trigger_module: [TRIGGER] Listener aktif. Tombol trigger: [SPACE]
+2026-07-07 08:59:15,903 [INFO] root: [BOOT] Manual Trigger Mode AKTIF — Tombol: [SPACE].
+2026-07-07 08:59:15,904 [INFO] root: [BOOT] Semua modul berhasil diinisialisasi.
+2026-07-07 08:59:15,904 [INFO] root: [BOOT] Dashboard tersedia di: http://[IP-RPi5]:5000
+2026-07-07 08:59:15,904 [INFO] root: [MAIN] Memasuki monitoring loop. Tekan Ctrl+C untuk berhenti.
+2026-07-07 08:59:19,480 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 08:59:19,481 [INFO] modules.manual_trigger_module: [TRIGGER] Listener dihentikan.
+2026-07-07 08:59:19,483 [INFO] root: [MAIN] === SIGINT STATION BERHENTI ===
+2026-07-07 08:59:57,070 [INFO] root: =======================================================
+2026-07-07 08:59:57,071 [INFO] root:   SIGINT STATION v4.0 HYBRID — BOOT SEQUENCE
+2026-07-07 08:59:57,071 [INFO] root: =======================================================
+2026-07-07 08:59:57,072 [INFO] modules.db_module: [DB] Database diinisialisasi: D:\Mikrokontroler\sigint-station\data\sigint.db
+2026-07-07 08:59:57,072 [INFO] root: [BOOT] Database OK.
+2026-07-07 08:59:57,072 [INFO] root: [BOOT] Memuat model YOLOv8 (harap tunggu)...
+2026-07-07 08:59:57,072 [INFO] modules.yolo_module: [YOLO] Memuat model: yolov8n.pt ...
+2026-07-07 08:59:59,413 [INFO] modules.yolo_module: [YOLO] Model berhasil dimuat.
+2026-07-07 08:59:59,413 [INFO] root: [BOOT] YOLOv8 OK.
+2026-07-07 08:59:59,419 [WARNING] modules.alarm_module: [ALARM] Koneksi serial gagal: could not open port '/dev/ttyACM0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)
+2026-07-07 08:59:59,420 [WARNING] modules.alarm_module: [ALARM] Periksa: apakah kabel USB Arduino sudah terpasang?
+2026-07-07 08:59:59,420 [WARNING] modules.alarm_module: [ALARM] Port yang dicoba: /dev/ttyACM0
+2026-07-07 08:59:59,421 [WARNING] modules.alarm_module: [ALARM] Alarm fisik Arduino DINONAKTIFKAN untuk sesi ini.
+2026-07-07 08:59:59,629 [INFO] modules.alarm_module: [ALARM] Pygame audio OK.
+2026-07-07 08:59:59,629 [INFO] root: [BOOT] Alarm module OK.
+2026-07-07 08:59:59,631 [INFO] modules.flask_server: [FLASK] Server aktif di 0.0.0.0:5000 (Native Threading Mode)
+2026-07-07 08:59:59,631 [INFO] root: [BOOT] Flask server OK.
+2026-07-07 08:59:59,644 [INFO] modules.manual_trigger_module: [TRIGGER] Listener aktif. Tombol trigger: [SPACE]
+2026-07-07 08:59:59,644 [INFO] root: [BOOT] Manual Trigger Mode AKTIF — Tombol: [SPACE].
+2026-07-07 08:59:59,644 [INFO] root: [BOOT] Semua modul berhasil diinisialisasi.
+2026-07-07 08:59:59,645 [INFO] root: [BOOT] Dashboard tersedia di: http://[IP-RPi5]:5000
+2026-07-07 08:59:59,645 [INFO] root: [MAIN] Memasuki monitoring loop. Tekan Ctrl+C untuk berhenti.
+2026-07-07 09:00:02,719 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 09:00:02,719 [INFO] root: [DEMO] Pipeline deteksi dimulai: -35.0 dBm @ 145.000 MHz.
+2026-07-07 09:00:16,444 [INFO] modules.webcam_module: [WEBCAM] Frame disimpan: D:\Mikrokontroler\sigint-station\data\captures\raw_20260707_090016.jpg
+2026-07-07 09:00:18,243 [INFO] modules.yolo_module: [YOLO] 0 orang terdeteksi. Foto disimpan: D:\Mikrokontroler\sigint-station\data\captures\yolo_20260707_090018.jpg
+2026-07-07 09:00:18,255 [INFO] modules.db_module: [DB] Event #16 disimpan: -35.0 dBm, 0 orang.
+2026-07-07 09:00:18,258 [INFO] modules.flask_server: [FLASK] Event berhasil didorong ke dashboard: event_id=16
+2026-07-07 09:00:18,258 [INFO] root: [DEMO] Pipeline selesai — Event #16 | 0 orang.
+2026-07-07 09:00:54,680 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 09:00:54,683 [INFO] modules.manual_trigger_module: [TRIGGER] Listener dihentikan.
+2026-07-07 09:00:54,683 [INFO] root: [MAIN] === SIGINT STATION BERHENTI ===
+2026-07-07 09:04:20,878 [INFO] root: =======================================================
+2026-07-07 09:04:20,879 [INFO] root:   SIGINT STATION v4.0 HYBRID — BOOT SEQUENCE
+2026-07-07 09:04:20,880 [INFO] root: =======================================================
+2026-07-07 09:04:20,881 [INFO] modules.db_module: [DB] Database diinisialisasi: D:\Mikrokontroler\sigint-station\data\sigint.db
+2026-07-07 09:04:20,882 [INFO] root: [BOOT] Database OK.
+2026-07-07 09:04:20,882 [INFO] root: [BOOT] Memuat model YOLOv8 (harap tunggu)...
+2026-07-07 09:04:20,883 [INFO] modules.yolo_module: [YOLO] Memuat model: yolov8n.pt ...
+2026-07-07 09:04:23,963 [INFO] modules.yolo_module: [YOLO] Model berhasil dimuat.
+2026-07-07 09:04:23,963 [INFO] root: [BOOT] YOLOv8 OK.
+2026-07-07 09:04:23,974 [WARNING] modules.alarm_module: [ALARM] Koneksi serial gagal: could not open port '/dev/ttyACM0': FileNotFoundError(2, 'The system cannot find the path specified.', None, 3)
+2026-07-07 09:04:23,975 [WARNING] modules.alarm_module: [ALARM] Periksa: apakah kabel USB Arduino sudah terpasang?
+2026-07-07 09:04:23,975 [WARNING] modules.alarm_module: [ALARM] Port yang dicoba: /dev/ttyACM0
+2026-07-07 09:04:23,976 [WARNING] modules.alarm_module: [ALARM] Alarm fisik Arduino DINONAKTIFKAN untuk sesi ini.
+2026-07-07 09:04:24,358 [INFO] modules.alarm_module: [ALARM] Pygame audio OK.
+2026-07-07 09:04:24,359 [INFO] root: [BOOT] Alarm module OK.
+2026-07-07 09:04:24,361 [INFO] modules.flask_server: [FLASK] Server aktif di 0.0.0.0:5000 (Native Threading Mode)
+2026-07-07 09:04:24,362 [INFO] root: [BOOT] Flask server OK.
+2026-07-07 09:04:24,376 [INFO] modules.manual_trigger_module: [TRIGGER] Listener aktif. Tombol trigger: [SPACE]
+2026-07-07 09:04:24,382 [INFO] root: [BOOT] Manual Trigger Mode AKTIF — Tombol: [SPACE].
+2026-07-07 09:04:24,382 [INFO] root: [BOOT] Semua modul berhasil diinisialisasi.
+2026-07-07 09:04:24,383 [INFO] root: [BOOT] Dashboard tersedia di: http://[IP-RPi5]:5000
+2026-07-07 09:04:24,384 [INFO] root: [MAIN] Memasuki monitoring loop. Tekan Ctrl+C untuk berhenti.
+2026-07-07 09:04:35,643 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 09:04:35,645 [INFO] root: [DEMO] Pipeline deteksi dimulai: -35.0 dBm @ 145.000 MHz.
+2026-07-07 09:04:49,478 [INFO] modules.webcam_module: [WEBCAM] Frame disimpan: D:\Mikrokontroler\sigint-station\data\captures\raw_20260707_090449.jpg
+2026-07-07 09:04:51,397 [INFO] modules.yolo_module: [YOLO] 1 orang terdeteksi. Foto disimpan: D:\Mikrokontroler\sigint-station\data\captures\yolo_20260707_090451.jpg
+2026-07-07 09:04:51,408 [INFO] modules.db_module: [DB] Event #17 disimpan: -35.0 dBm, 1 orang.
+2026-07-07 09:04:51,411 [INFO] modules.flask_server: [FLASK] Event berhasil didorong ke dashboard: event_id=17
+2026-07-07 09:04:51,411 [INFO] root: [DEMO] Pipeline selesai — Event #17 | 1 orang.
+2026-07-07 09:05:26,839 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 09:05:26,840 [INFO] root: [DEMO] Pipeline deteksi dimulai: -35.0 dBm @ 145.000 MHz.
+2026-07-07 09:05:28,386 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 09:05:40,885 [INFO] modules.webcam_module: [WEBCAM] Frame disimpan: D:\Mikrokontroler\sigint-station\data\captures\raw_20260707_090540.jpg
+2026-07-07 09:05:40,934 [INFO] modules.yolo_module: [YOLO] 1 orang terdeteksi. Foto disimpan: D:\Mikrokontroler\sigint-station\data\captures\yolo_20260707_090540.jpg
+2026-07-07 09:05:40,950 [INFO] modules.db_module: [DB] Event #18 disimpan: -35.0 dBm, 1 orang.
+2026-07-07 09:05:40,953 [INFO] modules.flask_server: [FLASK] Event berhasil didorong ke dashboard: event_id=18
+2026-07-07 09:05:40,953 [INFO] root: [DEMO] Pipeline selesai — Event #18 | 1 orang.
+2026-07-07 09:05:40,953 [INFO] root: [DEMO] Pipeline deteksi dimulai: -35.0 dBm @ 145.000 MHz.
+2026-07-07 09:05:41,454 [INFO] modules.manual_trigger_module: [TRIGGER] Tombol SPACE ditekan — memicu deteksi...
+2026-07-07 09:05:54,921 [INFO] modules.webcam_module: [WEBCAM] Frame disimpan: D:\Mikrokontroler\sigint-station\data\captures\raw_20260707_090554.jpg
+2026-07-07 09:05:54,966 [INFO] modules.yolo_module: [YOLO] 1 orang terdeteksi. Foto disimpan: D:\Mikrokontroler\sigint-station\data\captures\yolo_20260707_090554.jpg
+2026-07-07 09:05:54,983 [INFO] modules.db_module: [DB] Event #19 disimpan: -35.0 dBm, 1 orang.
+2026-07-07 09:05:54,985 [INFO] modules.flask_server: [FLASK] Event berhasil didorong ke dashboard: event_id=19
+2026-07-07 09:05:54,986 [INFO] root: [DEMO] Pipeline selesai — Event #19 | 1 orang.
+2026-07-07 09:05:54,986 [INFO] root: [DEMO] Pipeline deteksi dimulai: -35.0 dBm @ 145.000 MHz.
+2026-07-07 09:05:59,490 [INFO] modules.manual_trigger_module: [TRIGGER] Listener dihentikan.
+2026-07-07 09:05:59,490 [INFO] root: [MAIN] === SIGINT STATION BERHENTI ===

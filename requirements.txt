@@ -1,0 +1,17 @@
+# requirements.txt - Versi Adaptif Python 3.13
+
+pynput
+pyserial
+numpy
+scipy
+opencv-python
+ultralytics
+flask
+flask-socketio
+flask-cors
+eventlet
+python-telegram-bot
+python-dotenv
+pillow
+pygame
+requests

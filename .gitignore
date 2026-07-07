@@ -1,0 +1,9 @@
+Set-Content -Path ".gitignore" -Value "
+__pycache__/
+*.pyc
+venv/
+.env
+data/captures/
+dashboard/.next/
+dashboard/node_modules/
+"
